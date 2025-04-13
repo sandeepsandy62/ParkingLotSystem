@@ -1,12 +1,38 @@
-# Design a Parking Lot System 
-## Requirements
-The parking lot should have multiple levels, each level with a certain number of parking spots.
-The parking lot should support different types of vehicles, such as cars, motorcycles, and trucks.
-Each parking spot should be able to accommodate a specific type of vehicle.
-The system should assign a parking spot to a vehicle upon entry and release it when the vehicle exits.
-The system should track the availability of parking spots and provide real-time information to customers.
-The system should handle multiple entry and exit points and support concurrent access.
+# 🚗 Parking Lot System
 
-## To Execute The Project  
+A simple, object-oriented Parking Lot System built in Java. The system supports multiple levels, various vehicle types, and real-time parking spot tracking.
 
-```bash mvn exec:java -Dexec.mainClass="parkinglot.ParkingLotDemo" ```
+---
+
+## 📋 Requirements
+
+- The parking lot has **multiple levels**, each with a specific number of parking spots.
+- It supports different types of vehicles: **Cars**, **Motorcycles**, and **Trucks**.
+- Each parking spot is designed to accommodate a specific **vehicle type**.
+- Upon vehicle **entry**, the system assigns an available and appropriate spot.
+- Upon **exit**, the system releases the parking spot.
+- It tracks parking spot **availability in real-time** and provides this information to customers.
+- The system handles **multiple entry and exit points** and supports **concurrent access** using thread-safe operations.
+
+---
+
+## 🚀 How to Run the Project
+
+Make sure you have Maven installed. Then, from the project root directory, run:
+
+```mvn exec:java -Dexec.mainClass="parkinglot.ParkingLotDemo"```
+
+## Project Structure
+```
+parkinglot/
+├── Level.java
+├── ParkingLot.java
+├── ParkingLotDemo.java
+├── ParkingSpot.java
+└── vehicletype/
+    ├── Car.java
+    ├── MotorCycle.java
+    ├── Truck.java
+    ├── Vehicle.java
+    └── VehicleType.java
+```
