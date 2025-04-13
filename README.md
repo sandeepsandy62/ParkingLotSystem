@@ -9,4 +9,4 @@ The system should handle multiple entry and exit points and support concurrent a
 
 ## To Execute The Project  
 
-/bash mvn exec:java -Dexec.mainClass="parkinglot.ParkingLotDemo"
+<pre> ```bash mvn exec:java -Dexec.mainClass="parkinglot.ParkingLotDemo" ``` </pre>
